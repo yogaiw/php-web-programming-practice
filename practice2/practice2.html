@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laporkan Penipuan Online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-color:honeydew;
+        }
+        hr {
+            width:30%;
+            opacity: 50%;
+        }
+        .header {
+            padding: 10px;
+            background-color: brown;
+            text-align: center;
+            color: white;
+        }
+        .content-box {
+            padding: 20px;
+            margin: 30px 50px 50px 50px;
+            box-shadow: 1px 1px 3px grey;
+            background-color: white;
+            line-height: 25px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <h3>Laporkan Penipuan</h3>
+        </div>
+        <div class="content-box">
+            <p style="text-align:center">Lakukan Pelaporan Penipuan Disini</p>
+
+            <form>
+                <label for="pelapor">Nama Pelapor (Anda)</label><br>
+                <input type="text" id="pelapor" value="Nama Depan">
+                <input type="text" id="pelapor" value="Nama Belakang"><br>
+
+                <hr>
+
+                <label for="tanggal">Waktu Kejadian</label><br>
+                <input type="time" id="jam">
+                <input type="date" id="tanggal"><br>
+
+                <hr>
+
+                <label>Jenis Penipuan</label><br>
+                <select name="jenispenipuan">
+                    <option value="online">Online (Melalui Media Sosial / SMS)</option>
+                    <option value="offline">Offline (Berinteraksi secara langsung)</option>
+                    <option value="lainnya">Lainnya - Jelaskan melalui kronologi</option>
+                </select><br>
+
+                <hr>
+
+                <label>Kronologi Kejadian</label><br>
+                <textarea name="kronologi" rows="10" cols="30">Jelaskan kronologi kejadian penipuan disini.</textarea><br>
+
+                <hr>
+
+                <label>Kerugian uang yang dihasilkan (Jika sudah tertipu)</label><br>
+                <label>Rp. </label><input type="text"><br>
+
+                <hr>
+
+                <label>Jika penipuan dilakukan melalui platform messaging, sebutkan nomor penipu</label><br>
+                <input type="tel"><br>
+
+                <hr>
+
+                <label>Data penipu yang didapat (kirim secara kolektif dalam RAR/ZIP)</label><br>
+                <input type="file"><br>
+
+                <hr>
+
+                <input type="radio" id="pre" value="pre">
+                <label for="pre">Saya Melaporkan untuk Upaya Pencegahan (Belum Sempat Tertipu)</label><br>
+
+                <input type="radio" id="post" value="post">
+                <label for="post">Saya Melaporkan karena Saya Korban</label><br>
+
+                <hr>
+
+                <button type="submit">Laporkan</button>
+                <input type="reset">
+            </form>
+        </div>
+    </body>
+</html>
